@@ -22,7 +22,7 @@ def get_key_value(string: str) -> (str, str):
         key, value = string.split(":")
         key = key.strip()
         value = value.strip()
-    return key,value
+    return key, value
 
 
 def get_coord(string: str) -> (int, float, float):
@@ -40,8 +40,10 @@ def context2dict(context: list) -> dict:
     coord_mode = False
     for line in context:
         if coord_mode:
+            if "EOF" in line:
+                break
             index, x, y = get_coord(line)
-            data[sign].append((x, y))
+            data[sign].append((index, x, y))
         else:
             if sign in line:
                 coord_mode = True
