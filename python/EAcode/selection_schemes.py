@@ -30,6 +30,7 @@ def select_by_size(population, prob_list, size):
 
 
 # Selection schemes
+"""
 def roulette_wheel_selection( fitness_list ):
     sum_fitness = sum(fitness_list)
     prob_list = []
@@ -37,10 +38,11 @@ def roulette_wheel_selection( fitness_list ):
         prob_list.append(fitness/sum_fitness)
 
     return prob_list
+"""
 
 
 def rank_based_selection (fitness_list):
-    ascending_rank = sorted(range(len(fitness_list)), key=lambda k: fitness_list[k], reverse=False)
+    ascending_rank = sorted(range(len(fitness_list)), key=lambda k: fitness_list[k], reverse=True)
     prob_list = []
     sum_rank = sum(ascending_rank) + len(ascending_rank)
     for rank in ascending_rank:
@@ -50,7 +52,7 @@ def rank_based_selection (fitness_list):
 
 
 def linear_ranking_selection (fitness_list, alpha=0):
-    ascending_rank = sorted(range(len(fitness_list)), key=lambda k: fitness_list[k], reverse=False)
+    ascending_rank = sorted(range(len(fitness_list)), key=lambda k: fitness_list[k], reverse=True)
     beta = 2 - alpha
     mu = len(fitness_list)
     offset = alpha/mu
