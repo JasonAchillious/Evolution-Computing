@@ -15,18 +15,27 @@ cd Evolution-Computing/Assignment1/python
 2. Run tsp.py with default configuration by executing:
 
 ```
-python tsp.py
-
+python3 tsp.py
 ```
 
 3. Run tsp.py with configuration:
 
 ```
-python tsp.py -f dj38.tsp -g 10000 -p 20 -m 001 
+python3 tsp.py -f dj38.tsp -g 10000 -p 20 -m 001 
 ```
 
 4. show the help message of configurations:
 ```
-python tsp.py -h
-python random_search -h
+python3 tsp.py -h
+python3 random_search -h
+```
+Remark: There are 4 choices of mutators and 2 selection schemes: 
+```
+-m swap (swap)
+-m 001 (mutator_001)
+-m 002 (mutator_002)
+-m 003 (mutator_003)
+-r asjdhs (No matter what the args is, it will choose exp-rank if you input something after -r. 
+If no -r, then rank-base-selection.
+--plot  asdasf (as the above one, it will plot the fig or not)
 ```
