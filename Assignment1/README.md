@@ -19,3 +19,14 @@ python tsp.py
 
 ```
 
+3. Run tsp.py with configuration:
+
+```
+python tsp.py -f dj38.tsp -g 10000 -p 20 -m 001 
+```
+
+4. show the help message of configurations:
+```
+python tsp.py -h
+python random_search -h
+```
