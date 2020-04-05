@@ -7,14 +7,15 @@ The problem instances are from [http://www.math.uwaterloo.ca/tsp/index.html](htt
 ## Run the code
 1. Clone and enter this repository
 
-'''
+```
 git clone https://github.com/JasonAchillious/Evolution-Computing.git
 cd Evolution-Computing/Assignment1/python
-'''
+```
 
 2. Run tsp.py with default configuration by executing:
 
-'''
+```
 python tsp.py
 
-'''
+```
+
