@@ -7,6 +7,12 @@ import argparse
 
 if __name__ == '__main__':
 
+    """
+        This is to make it easier for the teacher to test my code. So I rewritten a EA and named it
+        ea_test. And I used ea_simple to generate data. Both method use the same algorithms.
+        
+    """
+
     parser = argparse.ArgumentParser(description='Process the random search - generating and test.')
 
     parser.add_argument('-f', '--instance', type=str, default="wi29.tsp",

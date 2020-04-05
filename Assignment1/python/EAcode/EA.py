@@ -8,6 +8,13 @@ import random
 import pandas as pd
 
 
+"""
+    ea_simple is for generating the data and analysis.
+    ea_test if for testing and plot.
+    Both are in the same of EA algorithm.
+    
+"""
+
 def ea_simple(tsp_file_path, output_path, gen_num, test_num, popu_size,
                tour_length=None, start_city=None, p_cities=None, **kwargs):
 

@@ -1,5 +1,10 @@
 import random
 
+"""
+    Mutation operators defined in report
+    
+"""
+
 
 def mutator_swap(individual: list) -> list:
     length = len(individual)

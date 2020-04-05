@@ -1,5 +1,9 @@
 from EAcode.dist_type import *
 
+"""
+    Computing the distance(cost) of the tour (circuit).
+"""
+
 
 def circuit_euc_dist(src_index: int, city_index: list, cities: list)->float:
     d_total = dist_euc_2d(cities[src_index], cities[city_index[0 ] ]) \

@@ -1,5 +1,9 @@
 import random
 
+"""
+    randomly initialize the population    
+"""
+
 
 def init_random(p_size, cities, tour_length) -> list:
     popu = []

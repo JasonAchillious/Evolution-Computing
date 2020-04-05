@@ -6,6 +6,11 @@ import argparse
 import matplotlib.pyplot as plt
 import os
 
+"""
+    The generating and test method. Each time this algorithm generates uniform-random permutation and test.
+    record the best.
+"""
+
 parser = argparse.ArgumentParser(description='Process the random search - generating and test.')
 
 parser.add_argument('-f', '--instance', type = str, default="wi29.tsp",

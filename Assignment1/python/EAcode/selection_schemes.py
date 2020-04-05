@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # selection schemes are copy from https://github.com/SUSTech-EC2020/selectionSchemes
 
+"""
+   method for selecting individual and selection schemes defined in paper.
+
+"""
+
 import random
 import math
 import numpy as np
