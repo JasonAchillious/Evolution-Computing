@@ -71,7 +71,7 @@ extern int task_num;
 extern int total_arc_num;
 extern int vehicle_num;
 extern int capacity;
-extern int lower_bound;
+
 
 extern int DEPOT;
 
@@ -80,6 +80,7 @@ extern int serve_cost[MAX_NODE_TAG_LENGTH][MAX_NODE_TAG_LENGTH];
 extern int shortest_path[MAX_NODE_TAG_LENGTH][MAX_NODE_TAG_LENGTH][MAX_NODE_TAG_LENGTH];
 extern int min_cost[MAX_NODE_TAG_LENGTH][MAX_NODE_TAG_LENGTH];
 
+extern int nodes_with_edgeId[MAX_NODE_TAG_LENGTH][MAX_NODE_TAG_LENGTH];
 
 extern task inst_tasks[MAX_TASK_TAG_LENGTH];
 extern arc inst_arcs[MAX_ARCS_TAG_LENGTH];
@@ -94,6 +95,8 @@ int get_demand(vector<int> route);
 
 int get_sum_of_cost(vector<int> costs);
 
+vector<int> get_path_id(int start_node, int end_node);
+
 void addEdge(vector <pair<int, int> > adj[], int u,
              int v, int wt);
 
@@ -104,5 +107,6 @@ vector< vector<int> > ulusoy_split(vector<int> PT, int max_route, int capa);
 int total_cost_eval(vector< vector<int> > routes);
 
 vector< vector<int> > scanning_path(vector<int> group, int num_route, int choosed_rule);
+
 
 #endif //SAHID_FUNCTIONS_H

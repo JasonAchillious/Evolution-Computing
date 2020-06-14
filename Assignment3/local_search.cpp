@@ -88,8 +88,8 @@ individual local_search(individual idv){
             idv.routes = solu;
             idv.total_cost = solu_cost;
             for (int i = 0; i < idv.routes.size(); i++) {
-                //idv.trav_costs[i] = get_trav_cost(idv.routes[i]);
-                //idv.loads[i] = get_demand(idv.routes[i]);
+                idv.trav_costs[i] = get_trav_cost(idv.routes[i]);
+                idv.loads[i] = get_demand(idv.routes[i]);
             }
         }
 
@@ -109,7 +109,7 @@ individual local_search(individual idv){
             }
         }
     }
-    idv.total_cost = get_sum_of_cost(idv.trav_costs);
+    idv.total_cost = total_cost_eval(idv.routes);
     idv.permu_tasks = gen_pt_by_routes(idv.routes);
     return idv;
 }

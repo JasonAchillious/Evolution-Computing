@@ -1,0 +1,13 @@
+The random seed is 1592042930.
+There are 11 vertices, 22 tasks, and the capacities of vehicles is 27.
+
+The max number of idle iteration of generating individual: 1000
+Beta: 0.900000
+The max iteration of k-means: 200
+The algorithm stop at the 1191th iteration
+The algorith took 63397 clicks (63.397000 seconds).
+The best searched solution with total cost 183 :
+1 1 19 14 4 (D,0,1,1,0,0)(S,1,1,3,8,2)(S,10,3,10,12,9)(S,19,10,7,19,13)(P,4,7,1,19,14)(D,0,1,1,19,14)
+1 2 22 36 11 (D,0,1,1,0,0)(P,4,1,7,0,1)(S,20,7,11,9,5)(P,20,11,7,9,9)(S,18,7,8,14,12)(S,12,8,4,15,21)(S,2,4,1,16,24)(S,6,1,9,17,25)(P,8,9,2,17,27)(S,7,2,5,22,33)(P,15,5,7,22,35)(P,4,7,1,22,36)(D,0,1,1,22,36)
+1 3 23 32 8 (D,0,1,1,0,0)(P,4,1,7,0,1)(P,15,7,5,0,3)(S,14,5,6,9,10)(P,14,6,5,9,17)(S,16,5,8,16,25)(S,22,8,10,23,27)(P,19,10,7,23,31)(P,4,7,1,23,32)(D,0,1,1,23,32)
+1 4 21 16 6 (D,0,1,1,0,0)(S,4,1,7,7,1)(S,11,7,4,8,5)(S,13,4,9,17,11)(S,8,9,2,21,13)(P,8,2,9,21,15)(P,6,9,1,21,16)(D,0,1,1,21,16)

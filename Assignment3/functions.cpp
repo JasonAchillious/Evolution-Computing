@@ -61,6 +61,18 @@ int get_sum_of_cost(vector<int> costs){
     return sum;
 }
 
+vector<int> get_path_id(int start_node, int end_node){
+    vector<int> nodes;
+    vector<int> pathes;
+    for (int k = 1; k <= shortest_path[start_node][end_node][0]; k++) {
+        nodes.push_back(shortest_path[start_node][end_node][k]);
+    }
+    for (int i=0; i < nodes.size()-1; i++){
+        pathes.push_back(nodes_with_edgeId[nodes[i]][nodes[i+1]]);
+    }
+    return pathes;
+}
+
 void addEdge(vector < pair<int, int> > adj[], int u,
              int v, int wt)
 {
